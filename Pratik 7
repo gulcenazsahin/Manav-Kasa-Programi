@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Pratik7 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double armut = 2.14;
+        double elma = 3.67;
+        double domates = 1.11;
+        double muz = 0.95;
+        double patlican = 5.00;
+
+        double armutKilo, elmaKilo, domatesKilo, muzKilo, patlicanKilo, toplamTutar;
+
+        System.out.print("Armut kac kilo?: " );
+        armutKilo = input.nextDouble();
+
+        System.out.print("Elma kac kilo?: " );
+        elmaKilo = input.nextDouble();
+
+        System.out.print("Domates kac kilo?: " );
+        domatesKilo = input.nextDouble();
+
+        System.out.print("Muz kac kilo?: " );
+        muzKilo = input.nextDouble();
+
+        System.out.print("Patlican kac kilo?: " );
+        patlicanKilo = input.nextDouble();
+
+        toplamTutar = (armutKilo * armut) + (elmaKilo * elma) + (domatesKilo * domates) + (muzKilo * muz) + (patlicanKilo * patlican);
+        System.out.println("Toplam Tutar: " + toplamTutar + " TL ");
+
+    }
